@@ -1,144 +1,401 @@
+
+
 <!DOCTYPE html>
 <html >
 
 <head>
   <meta charset="UTF-8">
-  <link rel="shortcut icon" type="image/x-icon" href="https://www.chanchao.com.tw/exhibitionfiles/news/DCOF_563.jpg" />
-  <link rel="mask-icon" type="" https://www.chanchao.com.tw/exhibitionfiles/news/DCOF_563.jpg" color="#111" />
-  <title>小林咖啡開始預訂</title>
+  <link rel="shortcut icon" type="image/x-icon" href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-1/p320x320/22228150_140642270009888_18445294562917038_n.png?oh=d0dced97d92623ad8609e63de10ba536&oe=5A3E0DB9" />
+  <link rel="mask-icon" type="" href="" color="#111" />
+  <title>CodePen - Portfolio Landing Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   
-  
-  
-  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
 
       <style>
-      @charset "UTF-8";
+      /* https://coolors.co/2c3e50-e74c3c-ffffff-3498db-95a3b3 */
+
+/* ========================
+Utilities
+======================== */
+
 * {
-  font-family: 微軟正黑體;
+  box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-weight: bold;
+.cf::before,
+.cf::after {
+    content: "";
+    display: table; 
 }
 
-header.jumbotron {
-  background-image: url(http://www.wall001.com/photograph/coffee/mxxx01/[wall001.com]_coffee_wallpaper_073864.jpg);
-  background-size: cover;
-  background-position: center center;
-  background-color: black;
-  PADDING: 200PX;
-  color: white;
+.cf::after {
+    clear: both;
 }
 
-section {
-  text-align: center;
-  padding: 80px;
+html {
+  position: relative;
 }
 
-.section-heading {
-  font-size: 36px;
-  margin-top: 0px;
+img {
+  max-width: 100%;
 }
 
-.section-subheading {
-  font-size: 25px;
+/* ========================
+Global
+======================== */
+
+body {
+  color: #444;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
 }
 
-.hea {
-  text-align: center;
-  background-color: black;
-  opacity: 0.5;
-  border-radius: 10px;
-}
-.hea:hover {
-  opacity: 0.7;
-  font-size: 220%;
-  padding: 30px;
+h1, h2, h3, h4, h5, h6, ul, ol, p {
+  margin-top: 0;
 }
 
-.a {
-  font-size: 40px;
+h1 {
+  font-weight: 900;
 }
 
-.col-coff {
-  padding: 90px;
-}
-.col-coff img {
-  width: 100%;
-  border-radius: 50%;
+p {
+  line-height: 1.5;
 }
 
-section.story {
-  background-color: #EEE;
-}
-section.story .col-md-6 {
-  padding: 40px;
+a, a:hover, a:focus, a:active, a:visited {
+  color: #E74C3C;
+  text-decoration: underline;
 }
 
-.icon-cof {
-  width: 200px;
-  margin-bottom: 20px;
+/* ========================
+Containers
+======================== */
+
+.container-fluid {
+  padding: 0 1em;
 }
 
-section.pic {
-  padding: 0px;
-  margin: 0px;
-  color: white;
+.container {
+  margin: 0 auto;
+  max-width: 996px;
 }
-section.pic .col-md-6 {
-  padding: 150px;
-  cursor: pointer;
+
+/* ========================
+Navigation
+======================== */
+
+@-webkit-keyframes show-header {
+    0% {
+        top: -4em;
+        opacity: 0;
+    }
+    100% {
+        top: 0;
+        opacity: 1;
+    }
 }
-section.pic p {
-  opacity: 0.8;
-  font-size: 25px;
-  transition-duration: 0.5s;
+
+@keyframes show-header {
+    0% {
+        top: -4em;
+        opacity: 0;
+    }
+    100% {
+        top: 0;
+        opacity: 1;
+    }
 }
-section.pic:hover P {
-  opacity: 0.9;
-  font-size: 85%;
-}
-section.pic .pic1:before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
+
+nav {
+  background-color: #fff;
+  box-shadow: 0 2px 2px rgba(0,0,0,.45);
+  position: relative;
   top: 0;
-  left: 0;
-  background-image: url(http://www.taiwanseo.org/wp-content/uploads/2015/05/%E3%80%8C%E9%9B%A8%E6%9E%97%E5%92%96%E5%95%A1%E3%80%8D%E9%9B%A8%E6%9E%97%E6%A8%B9%E4%B8%8B%E7%9A%84%E5%AF%B6%E7%9F%B3.jpg);
-  background-size: cover;
-  transition-duration: 0.5s;
-  background-position: center center;
-  z-index: -1;
-}
-section.pic .pic1:before:hover {
-  filter: brightness(5);
 }
 
-.pic2 {
-  background-image: url(http://www3.365shu.com/images3/wall/20060729/shamo010.jpg);
-  background-size: cover;
+nav a, nav a:hover, nav a:focus,  nav a:active, nav a:visited {
+  text-decoration: none;
 }
 
-.button.btn {
-  padding: 10px;
+nav .brand {
+  display: inline-block;
+  float: left;
+  font-size: 1.25em;
+  font-weight: 900;
 }
 
-section.ask {
-  background-color: #01233c;
-  color: white;
-  padding: 100px;
+nav .brand a {
+  color: #444;
+  display: block;
+  padding: 1em 0;
 }
 
-section.footer {
-  background-color: #1C1C1C;
-  font-size: 20px;
-  color: white;
-  padding: 10px;
-  letter-spacing: 1px;
+nav .nav-toggle {
+  color: #444;
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  font-size: 1.25em;
+  padding: 1em 0;
+  z-index: 1000
 }
 
+nav ul {
+  border-top: 1px solid #ccc;
+  clear: both;
+  list-style: none;
+  margin: 0 -1em;
+  padding: 0;
+  z-index: 999;
+}
+
+nav ul li {
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+
+nav ul li a {
+  color: #444;
+  display: block;
+  padding: .75em;
+}
+
+nav.sticky {
+  -webkit-animation: show-header .5s ease;
+          animation: show-header .5s ease;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* ========================
+Sections
+======================== */
+
+.splash {
+  background: -webkit-linear-gradient(rgba(44, 62, 80, 0.65), rgba(52, 152, 219, 0.65)),
+				url("https://images.unsplash.com/photo-1452796907770-ad6cd374b12d?crop=entropy&fit=crop&fm=jpg&h=1000&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925") no-repeat fixed center;
+  background: linear-gradient(rgba(44, 62, 80, 0.65), rgba(52, 152, 219, 0.65)),
+				url("https://images.unsplash.com/photo-1452796907770-ad6cd374b12d?crop=entropy&fit=crop&fm=jpg&h=1000&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925") no-repeat fixed center;
+	background-size: cover;
+	color: #fff;
+}
+
+.splash .container {
+  padding-top: 25vh; /* No JS fallback*/
+  padding-bottom: 25vh; /* No JS fallback*/
+}
+
+.profile-image {
+  border-radius: 50%;
+  display: block;
+  max-width: 200px;
+  margin: 0 auto 1em;
+  width: 100%;
+}
+
+.splash h1 {
+  font-size: 3em;
+  margin-bottom: .15em;
+  text-align: center;
+}
+
+.splash .lead, .splash .continue {
+  display: block;
+  text-align: center;
+}
+
+.splash .lead {
+  font-size: 1.5em;
+  font-weight: 100;
+  margin-bottom: 1em;
+}
+
+.splash .continue {
+  font-size: 4em;
+}
+
+.splash .continue a {
+  border: 4px solid #fff;
+  border-radius: 100%;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  width: 80px;
+}
+.splash .continue a:hover {
+  background-color: rgba(255, 255, 255, .25);
+}
+
+.intro .container, .features .container, .portfolio .container, .contact .container {
+  padding: 5em 0;
+}
+
+.intro, .features, .portfolio, .contact {
+  text-align: center;
+}
+
+.intro {
+  background-color: #E74C3C;
+  color: #fff;
+}
+
+.intro a, .intro a:hover, .intro a:focus, .intro a:active, .intro a:visited {
+  color: #fff;
+}
+
+.features img {
+  display: block;
+  margin: 0 auto 1em;
+  max-width: 200px;
+}
+
+.features .col-3 {
+  margin: 3em auto;
+  width: 100%;
+}
+
+.portfolio {
+  background-color: #3498DB;
+  color: #fff;
+}
+
+.gallery .gallery-image {
+  margin: 1em auto;
+  width: 100%;
+}
+
+.gallery .gallery-image img {
+  background-color: #23648F;
+  border-radius: 4px;
+  display: block;
+  height: auto;
+  padding: 6px;
+  width: 100%;
+}
+
+
+
+/* ========================
+Footer
+======================== */
+
+.footer {
+  background-color: #2C3E50;
+  color:  #fff;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.footer .container {
+  padding: 1em 0;
+}
+
+.footer a {
+  color: #fff;
+  margin-right: 1em;
+}
+
+.footer a:last-of-type {
+  margin-right: 0;
+}
+
+/* ========================
+Media Queries
+======================== */
+
+@media (min-width: 768px) {
+  
+  nav .nav-toggle {
+    display: none;
+  }
+  
+  nav ul {
+    border: none;
+    clear: none;
+    display: inline-block !important;
+    float: right;
+    margin: 0;
+    padding: 25px 0;
+  }
+  
+  nav ul li {
+    border: none;
+    display: inline-block;
+    float: left;
+    margin-right: 1.5em;
+  }
+  
+  nav ul li:last-of-type {
+    margin-right: 0;
+  }
+  
+  nav ul li a {
+    padding: 0;
+  }
+  
+  .splash h1 {
+    font-size: 6em;
+  }
+  
+  .splash .lead {
+    font-size: 3em;
+  }
+  
+  .features .col-3 {
+    float: left;
+    margin: 2em 5% 0 0;
+    padding: 0 1em;
+    width: 30%;
+  }
+  
+  .features .col-3:last-of-type {
+    margin-right: 0;
+  }
+  
+  .gallery .gallery-image {
+    float: left;
+    margin-right: 2.5%;
+    width: 31.6666666667%;
+  }
+  
+  .gallery .gallery-image:nth-of-type(3n) {
+    margin-right: 0;
+  }
+  
+  .contact form {
+    padding: 3em 2em 2em;
+  }
+  
+  .contact form input[type="submit"] {
+    padding: 1em 3em;
+    width: auto;
+  }
+  
+  .contact form input.full-half {
+    float: left;
+    margin-right: 2.5%;
+    width: 48.75%;
+  }
+  
+  .contact form input.full-half:nth-of-type(2n) {
+    margin-right: 0;
+  }
+  
+  .contact form textarea {
+    height: 12em;
+  }
+  
+}
     </style>
 
   
@@ -149,99 +406,213 @@ section.footer {
 
 <body translate="no" >
 
-  
-<header class="jumbotron">
-  <div class="container hea">
-    <h3 class="a">您從未喝過的手沖咖啡</h3>
-    <h1>即將登場!</h1>
-  </div>
-</header>
-<section class="intro">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h2 class="section-heading">前小林炸物灑粉專家-章文璟</h2>
-        <h2 class="section-subheading text-muted">隆重推薦!</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-4 col-coff"><img src="https://www.chanchao.com.tw/exhibitionfiles/news/DCOF_563.jpg" alt=""/>
-        <h3 class="text-muted">台灣的咖啡</h3>
-        <h4>小林以25道手工程序製作新鮮現泡咖啡</h4>
-      </div>
-      <div class="col-md-4 col-coff"><img src="https://www.chanchao.com.tw/exhibitionfiles/news/DCOF_563.jpg" alt=""/>
-        <h3 class="text-muted">你從未體驗過的奢華享受</h3>
-        <h4>使用新鮮現烘咖啡豆</h4>
-      </div>
-      <div class="col-md-4 col-coff"><img src="https://www.chanchao.com.tw/exhibitionfiles/news/DCOF_563.jpg" alt=""/>
-        <h3 class="text-muted">中興大學咖啡社最強</h3>
-        <h4>小林文璟曾任咖啡社副社長  </h4>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="story">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12"><img class="icon-cof" src="http://www.msqq.com/d/file/icon/2014-08-16/d7c347d6d5f5d0669be90ea59d59e5fb.png" alt=""/>
-        <h2 class="section-heading">小林咖啡的故事</h2>
-        <h2 class="section-subheading text-muted">創立於2013年!</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6">
-        <p class="h2">真正的咖啡</p>
-        <p class="content">咖啡是採用經過烘焙過程的咖啡豆所製作沖泡出來的飲料。小林文璟秉持著新鮮現泡、現磨的精神，以10%KY研磨，高溫85度C烘培所製成的絕佳飲品!</p>
-      </div>
-      <div class="col-md-6">
-        <p class="h2">咖啡界的小清新</p>
-        <p class="content">手沖咖啡在台灣慢慢開始流行起來。在各式咖啡機遍地開花的時代，器具簡單、講究手感技巧的手沖咖啡儼然是一股返璞歸真的清流</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="pic">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-6 pic1">
-        <div class="text-panel">
-          <h1>傳說中的咖啡
-            <p>在北非克里布西亞的叢林深處，隱藏著一種特別的咖啡，兼具柑橘與麝香貓味，現在，不用到北非，小林文璟泡給你喝!</p>
-          </h1>
-        </div>
-      </div>
-      <div class="col-md-6 pic2">
-        <div class="text-panel">
-          <h1>黑色的珍珠
-            <p>在印尼甘特尼布亞的雨林深處，有一種特殊的烘豆技巧，這種技巧僅有小林文璟掌握，來自印尼的失傳技法，在台灣就可以享受到!</p>
-          </h1>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="ask">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h1 class="section-heading">想立即體驗咖啡嗎？</h1>
-        <h3 class="section-subheading text-muted">禮拜二晚上，預定請留下聯絡資料</h3>
-        <input class="form-INLINE" type="text" placeholder="輸入您的email..."/>
-        <button class="btn btn-primary">確定</button>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="footer">
-  <div class="container">
-    <p>CREATED BY YUVIC@2017</p>
-  </div>
-</section>
-  
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/84/three.min.js'></script>
+  <nav class="container-fluid nav">
+  <div class="container cf">
+    <div class="brand">
+      
+    
+</nav>
 
+<div class="container-fluid splash" id="splash">
+  <div class="container">
+    <img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/22228150_140642270009888_18445294562917038_n.png?oh=3ad3cdb1c64d8abb25739d72bb0610b2&oe=5A8127E8" alt="Portrait of Mr. Roboto" class="profile-image">
+    <h1>Cancer Care Chatbot</h1>
+    <span class="lead">For Facebook  Messenger</span>
+    <span class="continue"><a href="#about"><i class="fa fa-angle-down"></i></a></span>
+  </div>
+</div>
+
+<div class="container-fluid intro" id="about">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>My name is  CSC (Cancer Survivor Chatbot ). I LOVE CHAT WITH PEOPLE. <BR>Please vote me for the most POPULAR team!
+Nice to meet you.<BR> You can share more about your story to me!</p>
+  </div>
+</div>
+
+<div class="container-fluid features" id="skills">
+  <div class="container cf">
+    <h2>Skills &amp; Experience</h2>
+    <div class="col-md-4.col-coff">
+      <img src="https://s22.postimg.org/oi5es3fkx/icon_cloud.png" alt="">
+      <h3>Individually Tailored information</h3>
+      <p>Help you know about Cancer</p>
+    </div>
+    <div class="col-md-4.col-coff">
+      <img src="https://s22.postimg.org/citwksa01/icon_graph.png" alt="">
+      <h3>Response evidenced based</h3>
+      <p>We can provided you reliable information</p>
+    </div>
+    <div class="col-md-4.col-coff">   <img src="https://s22.postimg.org/jxj8d5vvl/icon_coding.png" alt=""> <h3>AI platforms</h3>
+      <p>I would growth everyday</p>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid portfolio" id="portfolio">
+  <div class="container cf">
+   <div class="slider-item">
+                <h2>Testimonials</h2>
+									<blockquote>
+										<p>
+											It's like peering into the future of mental health supports and services. It's genuinely exciting and amazing to see something like this in action. I haven't been this awestruck since I saw the first iPhone.
+										</p>
+										<footer>
+											<cite>Jason, 28</cite>
+										</footer>
+									</blockquote>
+								</div>
+								<!--=== end slider-item ===-->
+
+								<!--=== start slider-item ===-->
+								<div class="slider-item">
+									<blockquote>
+										<p>
+											I love Woebot so much. I hope we can be friends forever. I actually feel super good and happy when I see that it "remembered" to check in with me!!!!!
+										</p>
+										<footer>
+											<cite>Carolyn, 22</cite>
+										</footer>
+									</blockquote>
+								</div>
+								<!--=== start slider-item ===-->
+
+								<!--=== start slider-item ===-->
+								<div class="slider-item">
+									<blockquote>
+										<p>
+											I loved this. I saw an improvement in my mood just from the two weeks!
+										</p>
+										<footer>
+											<cite>Lauren, 19</cite>
+										</footer>
+									</blockquote>
+								</div>
+								<!--=== end slider-item ===-->
+
+								<!--=== start slider-item ===-->
+								<div class="slider-item">
+									<blockquote>
+										<p>
+											I really was impressed and surprised at the difference the bot made in my everyday life in terms of noticing the types of thinking I was having and changing it. I also really liked the gratitude "journal" and that there wasn't the option to stop at one good thing that happened that day (because sometimes I wanted to). I liked that it forced you to keep thinking of the positive for 3 things
+										</p>
+										<footer>
+											<cite>Sarah, 24</cite>
+										</footer>
+									</blockquote>
+								</div>
+								<!--=== end slider-item ===-->
+
+								<!--=== start slider-item ===-->
+								<div class="slider-item">
+									<blockquote>
+										<p>
+											I enjoyed watching the videos given by the bot, and that I could learn different skills of awareness to help myself.
+										</p>
+										<footer>
+											<cite>Antonio, 19</cite>
+										</footer>
+									</blockquote>
+								</div>
+								<!--=== end slider-item ===-->
+
+							</div>
+							<!--=== end testimonial-slider ===-->
+
+						</div>
+						<!--=== start col ===-->
+
+					</div>
+					<!--=== start row ===-->
+
+				</div>
+				<!--=== start container ===-->
+
+			</section>
+			
+</div>
+
+<div class="container-fluid contact" id="contact">
+  <div class="container">
+     <button class="btn btn-primary"><a href="https://www.facebook.com/Cancer-Survivor-Chatbot-140641933343255/" target="_blank"><h2>LET'S TRY</h2></button>
+  </div>
+</div>
+
+<footer class="container-fluid footer">
+  <div class="container">
+    <a href="https://www.facebook.com/Cancer-Survivor-Chatbot-140641933343255/" target="_blank"><i class="fa fa-facebook"></i></a>
   
+  </div>
+</footer>
+  
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script >
+    ////////////////////////////////////
+// NAVIGATION SHOW/HIDE
+
+$("nav ul").hide();
+
+$(".nav-toggle").click( function() {
+  $("nav ul").slideToggle("medium");
+});
+
+$("nav ul li a, .brand a").click( function() {
+  $("nav ul").hide();
+});
+
+////////////////////////////////////
+// SMOOTH SCROLLING WITH NAV HEIGHT OFFSET
+
+$(function() {
+  var navHeight = $("nav").outerHeight();
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top - navHeight
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
+////////////////////////////////////
+// NAVIGATION STICKY
+
+var viewHeight = $(window).height();
+var navigation = $('nav');
+
+$(window).scroll( function() {
+  if ( $(window).scrollTop() > (viewHeight - 175) ) { //edit for nav height
+    navigation.addClass('sticky');
+  } else {
+    navigation.removeClass('sticky');
+  }
+});
+
+////////////////////////////////////////////////
+// MAKE THE SPLASH CONTAINER VERTICALLY CENTERED
+
+function centerSplash() {
+  var navHeight = $("nav").outerHeight();
+  var splashHeight = $(".splash .container").height();
+  var remainingHeight = $(window).height() - splashHeight - navHeight;
+  $(".splash .container").css({"padding-top" : remainingHeight/2, "padding-bottom" : remainingHeight/2});
+}
+
+$( document ).ready( function() {
+  centerSplash();
+});
+
+$( window ).resize( function() {
+  centerSplash();
+});
+  </script>
+
   
   
 
